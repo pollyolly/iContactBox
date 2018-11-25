@@ -3,12 +3,12 @@ var icontactBox = new Vue({
     el: '#icontact-box',
     data: {
         topic: [
-            {name:'UVLe', value:'UVLe'},
-            {name:'MPM-RD (OVLe)', value:'MPMRD (OVLe)'},
-            {name:'Training, Seminar or Workshop', value:'Training, Seminar or Workshop'},
-            {name:'Internship Program', value:'Internship Program'},
-            {name:'Other Services', value:'Other Services'},
-            {name:'Other Concerns', value:'Other Concerns'}
+            {name:'Demo1', value:'Demo1'},
+            {name:'Demo2', value:'Demo2'},
+            {name:'Demo3', value:'Demo3'},
+            {name:'Demo4', value:'Demo4'},
+            {name:'Demo5', value:'Demo5'},
+            {name:'Demo6', value:'Demo6'}
         ],
         topicInput:'',
         email: '',
