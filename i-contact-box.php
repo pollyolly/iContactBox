@@ -9,7 +9,7 @@ Plugin URI:
 Description: iContact Box Shortcode to use just copy and paste -> [icb_shortcode]
 Author: John Mark
 Version: 1.0
-Author URI: 
+Author URI:https://pollyolly.github.io/jmr/ 
 */
 global $icb_db_version;
 $icb_db_version = '1.1';
