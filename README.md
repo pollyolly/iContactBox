@@ -1,3 +1,2 @@
 # iContactBox
-Wordpress contact box
-Basic Re-captcha implementation and Email functionality in Wordpress.
+Basic Re-captcha implementation, JQuery AJAX + Vue and Email functionality in Wordpress.
