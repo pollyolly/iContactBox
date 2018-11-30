@@ -1,14 +1,17 @@
 <?php
 function icb_style_js(){
+	global $post;
     wp_register_style('icb_css', plugins_url('/icb-style.css', __FILE__), array(), 1.0);
     wp_register_script('icb_js_vue', plugins_url('/vue.min.js', __FILE__), array(), 1.0);
     wp_register_script('icb_js', plugins_url('/icb-script.js', __FILE__), array(), 1.0, true);
     wp_localize_script('icb_js', 'ajaxUrl', array(
       'ajax_url' => admin_url('admin-ajax.php')
    ));
-   wp_enqueue_style('icb_css');
-   wp_enqueue_script('icb_js_vue');
-   wp_enqueue_script('icb_js');
+	if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'icb_shortcode' ) ){
+		wp_enqueue_style('icb_css');
+		wp_enqueue_script('icb_js_vue');
+		wp_enqueue_script('icb_js');
+	}
 }
 add_action('wp_enqueue_scripts', 'icb_style_js');
 
